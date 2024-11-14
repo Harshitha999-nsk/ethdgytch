@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+      <style>
+          .container1{
+              display:grid;
+              background-color: rgb(220, 69, 160);
+              text-align: left;
+              grid-template-columns: repeat(2,1fr);
+              gap: 20px;
+          }
+          .container2{
+              display:grid;
+              background-color: rgb(77, 26, 166);
+              text-align:right;
+              grid-template-rows: repeat(2,1fr);
+              gap: 20px;
+              grid-column: auto;
+          }
+          .container3{
+              display:grid;
+              background-color: royalblue;
+              text-align: left;
+              grid-template-areas: repeat(2,1fr);
+              gap: 20px;
+              grid-row:span;
+          }
+          .container4{
+              display:grid;
+              background-color:brown;
+              text-align: end;
+              grid-template-columns: repeat(2,1fr);
+              gap: 20px;
+              grid-auto-flow: row;
+          }
+          .container5{
+              display:grid;
+              background-color:goldenrod;
+              text-align: center;
+              grid-template-rows: repeat(2,1fr);
+              gap: 20px;
+              grid-row-start: auto;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container1">
+          <div>Harshitha</div>
+          <div>Ankitha</div>
+          <div>Kumari</div>
+          <div>Purna prasada</div>
+          <div>Maha Lakshmi</div>
+      </div>
+      <div class="container2">
+          <div>Harshitha</div>
+          <div>Ankitha</div>
+          <div>Kumari</div>
+          <div>purna prasada</div>
+          <div>Maha Lakshmi</div>
+      </div>
+      <div class="container3">
+          <div>Harshitha</div>
+          <div>Ankitha</div>
+          <div>Kumari</div>
+          <div>purna prasda</div>
+          <div>MahaLakshmi</div>
+      </div>
+      <div class="container4">
+          <div>Harshitha</div>
+          <div>Ankitha</div>
+          <div>Kumari</div>
+          <div>Purna Prasada</div>
+          <div>Maha Lakshmi</div>
+      </div>
+      <div class="container5">
+          <div>Harshitha</div>
+          <div>Ankitha</div>
+          <div>Kumari</div>
+          <div>Purna prasada</div>
+          <div>Maha Lakshmi</div>
+      </div>
+  </body>
+  </html>
+      
+      
+      
+      
+      
