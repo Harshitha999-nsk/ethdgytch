@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function multiplicationTable(number, upTo = 10) {
+        let table = [];
+    
+        
+        for (let i = 1; i <= upTo; i++) {
+            table.push(`${number} x ${i} = ${number * i}`);
+        }
+    
+        return table;
+    }
+    console.log(multiplicationTable(5));  
+    </script>
+</body>
+</html>
