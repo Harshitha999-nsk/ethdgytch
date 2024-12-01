@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sortSalaries(salaries) {
+    return Object.entries(salaries)
+        .sort((a, b) => b[1] - a[1])
+        .reduce((obj, [key, value]) => {
+            obj[key] = value;
+            return obj;
+        }, {});
+}
+
+const salaries = { John: 4000, Jane: 5000, Bob: 2000 };
+console.log(sortSalaries(salaries));  
+</script>
+</body>
+</html>
