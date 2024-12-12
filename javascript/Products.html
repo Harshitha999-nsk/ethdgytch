@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <button onclick="fetchProducts()">Fetch Products</button>
+    <script>
+        var productsData =[
+ {name:"car"},{name:"bus"},{name:"zeep"}]
+            function fetchProducts(){
+setTimeout(function(){
+    var products =productsData;
+    var productsList = document.createElement("ul");
+    products.forEach(function(product){
+        var listItem = document.createElement("li");
+        listItem.textContent = `${product.name}`;
+        productsList.appendChild(listItem);
+
+    });
+    document.body.appendChild(productsList);
+},1000);
+
+            }
+        
+        </script>
+</body>
+</html>
